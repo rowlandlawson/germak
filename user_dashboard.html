@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-inter">
+  <div class="container mx-auto px-4 py-8">
+    <header class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-semibold text-blue-400">User Dashboard</h1>
+      <nav>
+        <a href="#" class="text-gray-300 hover:text-white mr-4">Profile</a>
+        <a href="#" class="text-gray-300 hover:text-white">Settings</a>
+        <a href="/" class="text-gray-300 hover:text-white ml-4">Logout</a>
+      </nav>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1">
+        <h2 class="text-xl font-semibold mb-4 text-white">Welcome, [User Name]</h2>
+        <p class="text-gray-300">Here's an overview of your account.</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1">
+        <h2 class="text-xl font-semibold mb-4 text-white">Account Summary</h2>
+        <p class="text-gray-300">Total Orders: <span class="text-yellow-400">12</span></p>
+        <p class="text-gray-300">Account Status: <span class="text-green-400">Active</span></p>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1">
+        <h2 class="text-xl font-semibold mb-4 text-white">Order History</h2>
+        <ul class="space-y-2">
+          <li class="text-gray-300">Order #12345 - Completed</li>
+          <li class="text-gray-300">Order #12346 - Processing</li>
+          <li class="text-gray-300">Order #12347 - Shipped</li>
+        </ul>
+        <a href="#" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">View All Orders</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1 lg:col-span-2">
+        <h2 class="text-xl font-semibold mb-4 text-white">Services Overview</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-2">Upcoming Services</h3>
+            <ul class="space-y-1">
+              <li class="text-gray-300">Installation - July 20, 2024</li>
+              <li class="text-gray-300">Maintenance - August 15, 2024</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-2">Service Requests</h3>
+            <ul class="space-y-1">
+              <li class="text-gray-300">Electrical Repair - Pending</li>
+              <li class="text-gray-300">CCTV Issue - Ongoing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1">
+        <h2 class="text-xl font-semibold mb-4 text-white">New Products</h2>
+        <ul class="space-y-2">
+          <li class="text-gray-300">Smart Lighting Kit</li>
+          <li class="text-gray-300">Surveillance Camera Pro</li>
+        </ul>
+        <a href="#" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">View More</a>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-[Inter]">
+  <div class="container mx-auto px-4 py-8">
+    <header class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-semibold text-blue-400">Admin Dashboard</h1>
+      <nav>
+        <a href="#" class="text-gray-300 hover:text-white mr-4">Settings</a>
+        <a href="/" class="text-gray-300 hover:text-white ml-4">Logout</a>
+      </nav>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Overview Widget -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1">
+        <h2 class="text-xl font-semibold text-gray-100 mb-4">Overview</h2>
+        <p class="text-gray-300">Total Revenue: <span class="text-green-400">$45,231.89</span></p>
+        <p class="text-gray-300">Total Orders: <span class="text-yellow-400">1,250</span></p>
+        <p class="text-gray-300">Total Users: <span class="text-blue-400">567</span></p>
+      </div>
+
+      <!-- Recent Orders Widget -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1 lg:col-span-2">
+        <h2 class="text-xl font-semibold text-gray-100 mb-4">Recent Orders</h2>
+        <table class="w-full border-collapse mt-4 text-left">
+          <thead class="text-gray-200 border-b border-gray-700">
+            <tr>
+              <th class="py-2">Order ID</th>
+              <th class="py-2">Customer</th>
+              <th class="py-2">Date</th>
+              <th class="py-2">Status</th>
+              <th class="py-2">Total</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-300">
+            <tr class="hover:bg-gray-700 cursor-pointer">
+              <td class="py-2">#12345</td>
+              <td class="py-2">John Smith</td>
+              <td class="py-2">2024-07-28</td>
+              <td class="py-2">Shipped</td>
+              <td class="py-2">$120.00</td>
+            </tr>
+            <tr class="hover:bg-gray-700 cursor-pointer">
+              <td class="py-2">#12346</td>
+              <td class="py-2">Jane Doe</td>
+              <td class="py-2">2024-07-27</td>
+              <td class="py-2">Processing</td>
+              <td class="py-2">$250.00</td>
+            </tr>
+            <tr class="hover:bg-gray-700 cursor-pointer">
+              <td class="py-2">#12347</td>
+              <td class="py-2">Mike Johnson</td>
+              <td class="py-2">2024-07-26</td>
+              <td class="py-2">Completed</td>
+              <td class="py-2">$95.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">View All Orders</a>
+      </div>
+
+      <!-- User Statistics -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1">
+        <h2 class="text-xl font-semibold text-gray-100 mb-4">User Statistics</h2>
+        <p class="text-gray-300">New Users (Last Month): <span class="text-blue-400">120</span></p>
+        <p class="text-gray-300">Active Users (Last Week): <span class="text-green-400">350</span></p>
+        <div class="mt-6">
+          <div class="bg-gray-700 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 rounded-full h-2" style="width: 30%"></div>
+          </div>
+          <p class="text-sm text-gray-400">User Engagement: 30%</p>
+        </div>
+      </div>
+
+      <!-- Product Inventory -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow border border-gray-700 col-span-1 lg:col-span-2">
+        <h2 class="text-xl font-semibold text-gray-100 mb-4">Product Inventory</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-2">Top Selling Products</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>Smart Lighting Kit - 200 Sales</li>
+              <li>Surveillance Camera Pro - 150 Sales</li>
+              <li>Electrical Fence System - 120 Sales</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-2">Low Stock Products</h3>
+            <ul class="space-y-2 text-red-400">
+              <li>Smart Bulbs (15)</li>
+              <li>CCTV Cable (20)</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Manage Products</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

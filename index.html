@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Trusted Partner for Home & Business Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .swiper {
+      height: 100vh;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-gray-800 text-white overflow-x-hidden">
+    <!-- Navbar -->
+<header class="bg-gray-800 text-white sticky top-0 z-50 border-b border-gray-700">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-emerald-400">HomeSolutions</a>
+  
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#hero" class="hover:text-emerald-400 transition-colors">Home</a>
+        <a href="#services" class="hover:text-emerald-400 transition-colors">Services</a>
+        <a href="#portfolio" class="hover:text-emerald-400 transition-colors">Projects</a>
+        <a href="#custom-request" class="hover:text-emerald-400 transition-colors">Request</a>
+        <a href="#testimonials" class="hover:text-emerald-400 transition-colors">Testimonials</a>
+        <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+      </nav>
+  
+      <!-- Mobile Toggle -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-4 bg-gray-700">
+      <a href="#hero" class="block hover:text-emerald-400 transition-colors">Home</a>
+      <a href="#services" class="block hover:text-emerald-400 transition-colors">Services</a>
+      <a href="#portfolio" class="block hover:text-emerald-400 transition-colors">Projects</a>
+      <a href="#custom-request" class="block hover:text-emerald-400 transition-colors">Request</a>
+      <a href="#testimonials" class="block hover:text-emerald-400 transition-colors">Testimonials</a>
+      <a href="#contact" class="block hover:text-emerald-400 transition-colors">Contact</a>
+    </div>
+  </header>
+  
+ 
+  
+
+  <!-- Hero Swiper -->
+  <header class="relative">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide bg-[url('https://placehold.co/1600x900')]">
+          <div class="overlay w-full h-full flex items-center justify-center">
+            <div class="text-center max-w-3xl">
+              <h1 class="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-blue-500 mb-4">
+                Your Trusted Partner for Home & Business Solutions
+              </h1>
+              <p class="text-lg md:text-xl text-gray-200 mb-6">
+                Electrical, Home Automation, Security & Maintenance Services
+              </p>
+              <a href="#services" class="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+                Explore Our Services
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide bg-[url('https://placehold.co/1600x900/222/fff')]">
+          <div class="overlay w-full h-full flex items-center justify-center">
+            <div class="text-center max-w-3xl">
+              <h1 class="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-blue-500 mb-4">
+                Innovative Electrical & Automation Experts
+              </h1>
+              <p class="text-lg md:text-xl text-gray-200 mb-6">
+                Bringing smart tech to your home and business with ease and excellence.
+              </p>
+              <a href="#contact" class="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide bg-[url('https://placehold.co/1600x900/888/fff')]">
+          <div class="overlay w-full h-full flex items-center justify-center">
+            <div class="text-center max-w-3xl">
+              <h1 class="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-blue-500 mb-4">
+                Your Smart Home, Simplified
+              </h1>
+              <p class="text-lg md:text-xl text-gray-200 mb-6">
+                Explore our range of smart home solutions designed to enhance convenience and security.
+              </p>
+              <a href="#about" class="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Pagination and navigation -->
+      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+    </div>
+  </header>
+
+  <!-- How it works -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 text-white">How It Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div  class="bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4 hover:border-emerald-400 border border-gray-700">
+          <div class="text-emerald-400 text-4xl mb-4">1️⃣</div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Describe Your Need</h3>
+          <p class="text-gray-300">Tell us about the automation solution you're looking for.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4 hover:border-emerald-400 border border-gray-700">
+          <div class="text-emerald-400 text-4xl mb-4">2️⃣</div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Get a Free Quote</h3>
+          <p class="text-gray-300">We’ll provide you with a custom quote and plan.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4 hover:border-emerald-400 border border-gray-700">
+          <div class="text-emerald-400 text-4xl mb-4">3️⃣</div>
+          <h3 class="text-xl font-semibold mb-2 text-white">Installation & Support</h3>
+          <p class="text-gray-300">Our expert team gets it installed and supports you afterward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-gray-700">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 text-white">Our Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+        <div class="bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4 hover:border-emerald-400 border border-gray-700">
+          <img src="/images/project1.jpg" alt="Project 1" class="w-full rounded mb-4">
+          <h4 class="text-lg font-semibold text-white">Smart Lighting Setup</h4>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4 hover:border-emerald-400 border border-gray-700">
+          <img src="/images/project2.jpg" alt="Project 2" class="w-full rounded mb-4">
+          <h4 class="text-lg font-semibold text-white">Automated Gate System</h4>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4 hover:border-emerald-400 border border-gray-700">
+          <img src="/images/project3.jpg" alt="Project 3" class="w-full rounded mb-4">
+          <h4 class="text-lg font-semibold text-white">Surveillance Integration</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why you should choose us -->
+  <section class="py-20 bg-gray-800 text-white text-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-10">Why Choose HomeSolutions?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-700 p-6 rounded-lg"><h3 class="text-xl font-semibold mb-2 text-emerald-400">✔️ Expert Team</h3><p class="text-gray-300">Years of experience in home automation.</p></div>
+        <div class="bg-gray-700 p-6 rounded-lg"><h3 class="text-xl font-semibold mb-2 text-emerald-400">✔️ Quality Equipment</h3><p class="text-gray-300">Top-tier products from trusted manufacturers.</p></div>
+        <div class="bg-gray-700 p-6 rounded-lg"><h3 class="text-xl font-semibold mb-2 text-emerald-400">✔️ Ongoing Support</h3><p class="text-gray-300">We're here even after installation is done.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class=" py-20 bg-gray-700">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-10 text-white">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h4 class="font-semibold text-emerald-400">Q: How long does installation take?</h4>
+          <p class="text-gray-300 mt-2">A: Most installations are completed within 2–3 days.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h4 class="font-semibold text-emerald-400">Q: Can I upgrade my existing system?</h4>
+          <p class="text-gray-300 mt-2">A: Yes, we can integrate new features into your current setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+   <!-- Contact Section -->
+<section id="contact" class="bg-gray-800 py-20">
+    <div class="container mx-auto text-white px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
+      <p class="text-lg text-center mb-12 text-gray-300">We'd love to hear from you. Feel free to reach out!</p>
+  
+      <div class="flex flex-col md:flex-row md:justify-center gap-12 items-start">
+        
+        <!-- Contact Info (Left Side) -->
+        <div class="w-full md:w-1/2 lg:w-2/5">
+            <form action="/contact" method="POST" class="bg-gray-700 p-6 rounded-lg shadow-lg">
+              <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-lg bg-gray-800 border border-gray-600 text-white" required>
+              <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-lg bg-gray-800 border border-gray-600 text-white" required>
+              <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 rounded-lg bg-gray-800 border border-gray-600 text-white" required></textarea>
+              <button type="submit" class="w-full py-3 px-6 bg-emerald-600 hover:bg-emerald-700 rounded-lg text-white transition-colors">Send Message</button>
+            </form>
+          </div>
+
+           <!-- Contact Form (Right Side) -->
+        <div class="w-full md:w-1/2 lg:w-1/3 text-left">
+          <h3 class="text-xl font-semibold mb-4 text-white">Our Office</h3>
+          <p class="text-lg mb-3 text-gray-300">1234 HomeStreet, CityCenter, Lagos, Nigeria</p>
+          <p class="text-lg mb-3 text-gray-300">Phone: +234 123 456 789</p>
+          <p class="text-lg mb-3 text-gray-300">Email: contact@homesolutions.com</p>
+          <a href="https://wa.me/yourphonenumber" class="bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-6 rounded-full inline-block mt-2 transition-colors">Chat on WhatsApp</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-10 text-center">
+    <div class="container mx-auto">
+      <p>&copy; 2025 HomeSolutions. All rights reserved.</p>
+      <p class="text-sm mt-2 text-gray-400">Made with 💡 in Nigeria</p>
+    </div>
+  </footer>
+  
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.hero-swiper', {
+      loop: true,
+      speed: 2000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      effect: 'cube', // try 'fade', 'coverflow', or 'slide' if preferred
+      cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      }
+    });
+  </script>
+ <!-- Toggle Script -->
+ <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
